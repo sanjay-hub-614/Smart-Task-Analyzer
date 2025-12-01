@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Panel -->
+    <div class="left-panel">
+        <h2>Task Input</h2>
+
+        <label for="strategy">Sorting Strategy:</label>
+        <select id="strategy">
+            <option value="fastest">Fastest Wins</option>
+            <option value="deadline">Deadline Driven</option>
+            <option value="priority">Priority First</option>
+        </select>
+
+        <textarea id="taskInput" placeholder="Enter task JSON here..."></textarea>
+
+        <button onclick="analyzeTasks()">Analyze</button>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+        <h2>Results</h2>
+        <div id="results"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
