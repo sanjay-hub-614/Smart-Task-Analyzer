@@ -18,8 +18,8 @@ Make sure you have the following installed:
 ## 📁 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd <project-folder>
+git clone https://github.com/sanjay-hub-614/Smart-Task-Analyzer.git
+cd Smart-Task-Analyzer
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
